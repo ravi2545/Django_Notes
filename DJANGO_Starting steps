@@ -1,0 +1,17 @@
+STEP-1:
+CREATE VIRTUAL ENV
+python3 -m venv project_NAME
+
+
+STEP-2:
+cd project_NAME 
+cd Scripts
+activate.bat
+
+
+STEP-3:
+CREATE DJANGO REAL PROJECT
+python -m django startproject project_name
+cd project_name
+#TO RUN SERVER
+python manage.py runserver
