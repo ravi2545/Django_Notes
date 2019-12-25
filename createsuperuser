@@ -1,0 +1,13 @@
+STEP-1:createsuperuser
+  python manage.py createsuperuser
+  
+STEP-2:GOTO created app like prasad in that open admin.py
+  TYPE:
+  from .models import dis
+  
+  
+  admin.register(dis)
+ 
+ 
+STEP-3:
+  python manage.py runserver
