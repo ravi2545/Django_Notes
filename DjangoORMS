@@ -1,0 +1,48 @@
+STEP-1:CREATE PROJECT
+  python -m django startproject raviweb
+  
+  
+STEP-2:RUN PROJECT
+  python manage.py runserver
+ 
+ 
+STEP-3:CREATE PROJECT
+  python manage.py startapp prasad
+  
+  
+STEP-4:IN prasad APP goto models.py file and write your ORMS
+  from django.db import models
+  # Create your models here.
+  class dis(models.Model):
+    name=models.CharField(max_length=20)
+ 
+ 
+STEP-5:GOTO raviweb default APP in tahe take and edit setting.py in the line INSTALLED_APPS type your CREATED app name
+  INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'prasad'#I HAVE CREATED THIS name as a app
+]
+  
+  
+STEP-6:makemigrations
+  python manage.py makemigrations prasad
+  
+  
+STEP-7:migrate
+  python manage.py migrate prasad
+  
+  
+STEP-8:RUN in shell
+  python manage.py shell
+  
+  
+STEP-9:
+  >>> from prasad.models import dis
+  >>> k=dis()
+  >>> k.name="prasadravi"
+  >>> k.save()
