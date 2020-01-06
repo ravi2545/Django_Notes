@@ -46,3 +46,7 @@ STEP-9:
   >>> k=dis()
   >>> k.name="prasadravi"
   >>> k.save()
+  
+  
+  
+  https://docs.djangoproject.com/en/3.0/topics/db/sql/
